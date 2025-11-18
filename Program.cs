@@ -42,7 +42,16 @@ Review leonsReview = new Review(1, 3, "Too few pizzas to choose from, but quite 
 order1.LeaveReview(leonsReview);
 
 
+Pizza searchedPizza = menu.SearchPizza("Margherita");
 
+if (searchedPizza != null)
+{
+    Console.WriteLine("Search result: " + searchedPizza.Name + " " + searchedPizza.price + " kr");
+}
+else
+{
+    Console.WriteLine("Pizza not found");
+}
 
 
 

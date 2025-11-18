@@ -64,6 +64,18 @@
         else if (choice == 4) return _pizza4;
         else return null;
     }
+    public Pizza SearchPizza(string search)
+    {
+    
+        string s = search.ToLower();
+
+        if (_pizza1.Name.ToLower().Contains(s)) return _pizza1;
+        if (_pizza2.Name.ToLower().Contains(s)) return _pizza2;
+        if (_pizza3.Name.ToLower().Contains(s)) return _pizza3;
+        if (_pizza4.Name.ToLower().Contains(s)) return _pizza4;
+
+        return null;
+    }
 
     public Topping GetTopping(int choice)
     {
