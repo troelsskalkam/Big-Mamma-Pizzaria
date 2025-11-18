@@ -38,7 +38,7 @@ order1.AddTopping(toppingA);
 order1.AddTopping(toppingC);
 order1.AddTopping(toppingE);
 
-Review leonsReview = new Review(1, 3, "Too few pizzas to choose from, but quite tasty!");
+Review leonsReview = new Review(1, 3, "Tooe few pizzas to choose from, but quite tasty!");
 order1.LeaveReview(leonsReview);
 
 
